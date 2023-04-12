@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>page1</title>
+        <style type="text/css">
+            h2 { /*设定h2的共同属性*/
+                text-align: center; /*文本居中*/
+            }
+            header { /*整个header适用*/
+                background-color: #F47D31;
+                color: #FFFFFF;
+                text-align: center;
+            }
+            footer { 
+                background-color: #c45a18;
+                color: #FFFFFF;
+                text-align: center;
+            }
+            .formbody { /*整个页面的属性设定*/
+                display:-webkit-flex;
+                background-color:#FFFFFF; /*背景色*/
+                margin: 10px auto; /*页边空白*/
+                max-width: 100%;
+                max-height: 100%;
+                margin-left: 50px;
+                margin-right: 50px;
+                flex-direction:row;
+            }
+            .aside{
+                order: -1;
+                margin-top: 20px;
+                margin-bottom: 20px;
+                max-width: 150px;
+                max-height:200px;
+                text-align: center;
+                align-items: center;
+                justify-content: center;
+            }
+            .article { /*article适用*/
+                margin-left:2px;;
+                background-color: none;
+            }
+            #page2{
+                text-align: center;
+            }
+        </style>
+        <script>
+            window.addEventListener("load",function(){
+                document.getElementById("searchbut").addEventListener("click",myseek);
+                document.getElementById("outbut").addEventListener("click",myReturn);
+                function myseek(){
+                    var seekT=document.getElementById("searchtext").value;
+                    alert("正在查找"+seekT);
+                }
+                function myReturn(){
+                    window.open("login.html","_self");
+                }
+            });
+        </script>
+    </head>
+
+    <body>
+        <header>
+            <div>
+                <p><h2>第一页</h2></p>
+            </div>
+        </header>
+
+        <div class="formbody">
+            <label>
+                <input type="text" id="searchtext" placeholder="在此输入查找">
+                <input type="button" id="searchbut" value="查询"/>
+                <input type="button" id="outbut" value="退出"/>
+            </label>
+        </div>
+
+        <div class="formbody">
+            <aside class="aside">
+                <div>
+                    <img src="https://wx1.sinaimg.cn/mw1024/0079v2xrgy1h13vxvq73kj323w1kwdoo.jpg" ></p>
+                </div>
+            </aside>
+
+            <article class="article">
+                <div>
+                    <section>
+                        <h3><a href="choose1.html">选项1</a></h3>
+                    </section>
+                    <section>
+                        <form>
+                            <p>HTML的英文全称是 Hyper Text Markup Language，即超文本标记语言。
+                            HTML是由Web的发明者 Tim Berners-Lee和同事 Daniel W. Connolly于1990年创立的一种标记语言，
+                            它是标准通用化标记语言SGML的应用。</p>
+                        </form>
+                    </section>
+                    <section><p style="color:cadetblue">2023年4月5号</p></section>
+                </div>
+            </article>
+        </div>
+        <div class="formbody">
+            <aside class="aside">
+                <div>
+                    <img src="D:\移动应用开发\作业一\初始资源\images\english.jpg" ></p>
+                </div>
+            </aside>
+
+            <article class="article">
+                <div>
+                    <section>
+                        <h3><a href="choose2.html">选项2</a></h3>
+                    </section>
+                    <section>
+                        <form>
+                            <p>HTML的英文全称是 Hyper Text Markup Language，即超文本标记语言。
+                            HTML是由Web的发明者 Tim Berners-Lee和同事 Daniel W. Connolly于1990年创立的一种标记语言，
+                            它是标准通用化标记语言SGML的应用。</p>
+                        </form>
+                    </section>
+                    <section><p style="color:cadetblue">2023年4月5号</p></section>
+                </div>
+            </article>
+        </div>
+        <div class="formbody">
+            <aside class="aside">
+                <div>
+                    <img src="D:\移动应用开发\作业一\初始资源\images\math.jpg" ></p>
+                </div>
+            </aside>
+
+            <article class="article">
+                <div>
+                    <section>
+                        <h3><a href="choose3.html">选项3</a></h3>
+                    </section>
+                    <section>
+                        <form>
+                            <p>HTML的英文全称是 Hyper Text Markup Language，即超文本标记语言。
+                            HTML是由Web的发明者 Tim Berners-Lee和同事 Daniel W. Connolly于1990年创立的一种标记语言，
+                            它是标准通用化标记语言SGML的应用。</p>
+                        </form>
+                    </section>
+                    <section><p style="color:cadetblue">2023年4月5号</p></section>
+                </div>
+            </article>
+        </div>
+
+        <div style="margin: 10px auto; text-align: center;">
+            <a id="page2" href="page2.html">点击到第二页</a>
+        </div>
+
+        <footer>
+            <div>
+                页脚  版权所有 ©溜溜梅
+            </div>
+        </footer>
+    </body>
+</html>
